@@ -1,6 +1,10 @@
 package test
 import org.openjdk.jmh.annotations.Benchmark
 import test.microbenchmarking.*
+import test.microbenchmarking.MultiArgumentCalls
+import test.microbenchmarking.MultiArgumentInstantiationsAndCalls
+import test.microbenchmarking.MultiFreeVariablesCalls
+import test.microbenchmarking.MultiFreeVariablesInstantiationsAndCalls
 
 open class MyBenchmark {
     @Benchmark
