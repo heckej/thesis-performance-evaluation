@@ -1,7 +1,7 @@
 package test.microbenchmarking
 
 class MultiFreeVariablesInstantiationsAndCalls {
-  fun closure0Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure0FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     for (i in 1..3000000) {
       val lambda0 = { println("Hello lambda0!"); 5 }
@@ -10,7 +10,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure1Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure1FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     for (i in 1..3000000) {
@@ -20,7 +20,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure2Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure2FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -31,7 +31,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure3Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure3FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -43,7 +43,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure4Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure4FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -56,7 +56,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure5Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure5FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -70,7 +70,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure6Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure6FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -85,7 +85,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure7Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure7FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -101,7 +101,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure8Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure8FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -118,7 +118,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure9Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure9FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -136,7 +136,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure10Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure10FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -155,7 +155,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure11Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure11FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -175,7 +175,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure12Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure12FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -196,7 +196,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure13Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure13FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -218,7 +218,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure14Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure14FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -241,7 +241,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure15Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure15FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -265,7 +265,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure16Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure16FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -290,7 +290,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure17Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure17FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -316,7 +316,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure18Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure18FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -343,7 +343,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure19Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure19FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -371,7 +371,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure20Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure20FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -400,7 +400,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure21Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure21FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -430,7 +430,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure22Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure22FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
@@ -461,7 +461,7 @@ class MultiFreeVariablesInstantiationsAndCalls {
     return j
   }
 
-  fun closure23Arguments3MillionInstantiationsAndCalls(): Int {
+  fun closure23FreeVariables3MillionInstantiationsAndCalls(): Int {
     var j = 0
     val a0 = 0
     val a1 = 1
