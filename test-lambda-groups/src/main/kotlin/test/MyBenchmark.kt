@@ -1,3 +1,4 @@
+package test
 import org.openjdk.jmh.annotations.Benchmark
 import test.microbenchmarking.*
 
