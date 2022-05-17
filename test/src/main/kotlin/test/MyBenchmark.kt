@@ -1,10 +1,7 @@
 package test
 import org.openjdk.jmh.annotations.Benchmark
 import test.microbenchmarking.*
-import test.microbenchmarking.MultiArgumentCalls
-import test.microbenchmarking.MultiArgumentInstantiationsAndCalls
-import test.microbenchmarking.MultiFreeVariablesCalls
-import test.microbenchmarking.MultiFreeVariablesInstantiationsAndCalls
+import org.openjdk.jmh.infra.Blackhole
 
 open class MyBenchmark {
     @Benchmark
@@ -149,6 +146,150 @@ open class MyBenchmark {
     fun closure23FreeVariables3MillionCalls(): Int {
         val main = MultiFreeVariablesCalls()
         return main.closure23FreeVariables3MillionCalls()
+    }
+
+    @Benchmark
+    fun closure0FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure0FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure1FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure1FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure2FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure2FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure3FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure3FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure4FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure4FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure5FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure5FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure6FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure6FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure7FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure7FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure8FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure8FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure9FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure9FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure10FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure10FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure11FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure11FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure12FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure12FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure13FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure13FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure14FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure14FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure15FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure15FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure16FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure16FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure17FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure17FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure18FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure18FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure19FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure19FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure20FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure20FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure21FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure21FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure22FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure22FreeVariables3MillionInstantiations(blackhole)
+    }
+
+    @Benchmark
+    fun closure23FreeVariables3MillionInstantiations(blackhole: Blackhole): Int {
+        val main = MultiFreeVariablesInstantiations()
+        return main.closure23FreeVariables3MillionInstantiations(blackhole)
     }
 
     @Benchmark
