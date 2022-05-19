@@ -1,0 +1,442 @@
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+7-LTS
+# VM invoker: /home/heckej/.sdkman/candidates/java/17.0.3.fx-librca/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: test.MyBenchmark.closure13FreeVariables3MillionCalls
+
+# Run progress: 0,00% complete, ETA 00:41:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 992602450,893 ops/s
+# Warmup Iteration   2: 993737388,437 ops/s
+# Warmup Iteration   3: 996137992,814 ops/s
+# Warmup Iteration   4: 996304729,108 ops/s
+# Warmup Iteration   5: 996337337,746 ops/s
+Iteration   1: 996348887,210 ops/s
+Iteration   2: 996232529,293 ops/s
+Iteration   3: 990495098,457 ops/s
+Iteration   4: 996334777,707 ops/s
+Iteration   5: 996153281,428 ops/s
+
+# Run progress: 4,00% complete, ETA 00:40:11
+# Fork: 2 of 5
+# Warmup Iteration   1: 993211428,457 ops/s
+# Warmup Iteration   2: 995240245,932 ops/s
+# Warmup Iteration   3: 996340243,729 ops/s
+# Warmup Iteration   4: 996239028,122 ops/s
+# Warmup Iteration   5: 996279519,332 ops/s
+Iteration   1: 996300028,248 ops/s
+Iteration   2: 996235749,590 ops/s
+Iteration   3: 996348864,820 ops/s
+Iteration   4: 996349853,364 ops/s
+Iteration   5: 996277214,073 ops/s
+
+# Run progress: 8,00% complete, ETA 00:38:29
+# Fork: 3 of 5
+# Warmup Iteration   1: 993420423,349 ops/s
+# Warmup Iteration   2: 995143574,281 ops/s
+# Warmup Iteration   3: 996244258,142 ops/s
+# Warmup Iteration   4: 996276061,018 ops/s
+# Warmup Iteration   5: 995963726,920 ops/s
+Iteration   1: 996285857,478 ops/s
+Iteration   2: 996239730,449 ops/s
+Iteration   3: 996316807,668 ops/s
+Iteration   4: 996349189,070 ops/s
+Iteration   5: 996270366,299 ops/s
+
+# Run progress: 12,00% complete, ETA 00:36:48
+# Fork: 4 of 5
+# Warmup Iteration   1: 993472797,267 ops/s
+# Warmup Iteration   2: 994092069,791 ops/s
+# Warmup Iteration   3: 996269709,314 ops/s
+# Warmup Iteration   4: 996228419,069 ops/s
+# Warmup Iteration   5: 996282029,967 ops/s
+Iteration   1: 996246332,437 ops/s
+Iteration   2: 996268168,286 ops/s
+Iteration   3: 996269798,316 ops/s
+Iteration   4: 996296816,415 ops/s
+Iteration   5: 996302530,978 ops/s
+
+# Run progress: 16,00% complete, ETA 00:35:07
+# Fork: 5 of 5
+# Warmup Iteration   1: 993513189,850 ops/s
+# Warmup Iteration   2: 994802494,430 ops/s
+# Warmup Iteration   3: 996283181,204 ops/s
+# Warmup Iteration   4: 996261229,627 ops/s
+# Warmup Iteration   5: 996308503,557 ops/s
+Iteration   1: 996313123,384 ops/s
+Iteration   2: 995843966,250 ops/s
+Iteration   3: 995862697,395 ops/s
+Iteration   4: 996111938,214 ops/s
+Iteration   5: 996309821,522 ops/s
+
+
+Result "test.MyBenchmark.closure13FreeVariables3MillionCalls":
+  996014537,134 ±(99.9%) 866932,704 ops/s [Average]
+  (min, avg, max) = (990495098,457, 996014537,134, 996349853,364), stdev = 1157330,357
+  CI (99.9%): [995147604,430, 996881469,838] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+7-LTS
+# VM invoker: /home/heckej/.sdkman/candidates/java/17.0.3.fx-librca/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: test.MyBenchmark.closure16FreeVariables3MillionCalls
+
+# Run progress: 20,00% complete, ETA 00:33:27
+# Fork: 1 of 5
+# Warmup Iteration   1: 992830246,904 ops/s
+# Warmup Iteration   2: 995172209,593 ops/s
+# Warmup Iteration   3: 996263909,862 ops/s
+# Warmup Iteration   4: 996334668,820 ops/s
+# Warmup Iteration   5: 996354106,165 ops/s
+Iteration   1: 996355511,130 ops/s
+Iteration   2: 996314602,423 ops/s
+Iteration   3: 996290091,813 ops/s
+Iteration   4: 996319912,380 ops/s
+Iteration   5: 996324314,484 ops/s
+
+# Run progress: 24,00% complete, ETA 00:31:47
+# Fork: 2 of 5
+# Warmup Iteration   1: 993314331,620 ops/s
+# Warmup Iteration   2: 995357550,610 ops/s
+# Warmup Iteration   3: 996289453,656 ops/s
+# Warmup Iteration   4: 996301330,798 ops/s
+# Warmup Iteration   5: 996326026,339 ops/s
+Iteration   1: 996330204,605 ops/s
+Iteration   2: 996286873,065 ops/s
+Iteration   3: 996282278,079 ops/s
+Iteration   4: 996320204,126 ops/s
+Iteration   5: 996318113,739 ops/s
+
+# Run progress: 28,00% complete, ETA 00:30:06
+# Fork: 3 of 5
+# Warmup Iteration   1: 993243236,044 ops/s
+# Warmup Iteration   2: 994305912,593 ops/s
+# Warmup Iteration   3: 996302567,503 ops/s
+# Warmup Iteration   4: 996283163,016 ops/s
+# Warmup Iteration   5: 996298227,931 ops/s
+Iteration   1: 996287165,555 ops/s
+Iteration   2: 996179010,257 ops/s
+Iteration   3: 996293745,781 ops/s
+Iteration   4: 996312307,020 ops/s
+Iteration   5: 996277350,938 ops/s
+
+# Run progress: 32,00% complete, ETA 00:28:26
+# Fork: 4 of 5
+# Warmup Iteration   1: 993106439,925 ops/s
+# Warmup Iteration   2: 992632975,828 ops/s
+# Warmup Iteration   3: 996306197,939 ops/s
+# Warmup Iteration   4: 996314511,959 ops/s
+# Warmup Iteration   5: 996336798,694 ops/s
+Iteration   1: 996333870,034 ops/s
+Iteration   2: 996323583,356 ops/s
+Iteration   3: 996292450,203 ops/s
+Iteration   4: 996325474,672 ops/s
+Iteration   5: 996305155,843 ops/s
+
+# Run progress: 36,00% complete, ETA 00:26:45
+# Fork: 5 of 5
+# Warmup Iteration   1: 993357416,674 ops/s
+# Warmup Iteration   2: 995347309,965 ops/s
+# Warmup Iteration   3: 996285988,038 ops/s
+# Warmup Iteration   4: 996261833,433 ops/s
+# Warmup Iteration   5: 996321637,746 ops/s
+Iteration   1: 996267533,818 ops/s
+Iteration   2: 996290234,534 ops/s
+Iteration   3: 996318530,046 ops/s
+Iteration   4: 996325466,114 ops/s
+Iteration   5: 996282920,271 ops/s
+
+
+Result "test.MyBenchmark.closure16FreeVariables3MillionCalls":
+  996302276,171 ±(99.9%) 25013,819 ops/s [Average]
+  (min, avg, max) = (996179010,257, 996302276,171, 996355511,130), stdev = 33392,733
+  CI (99.9%): [996277262,352, 996327289,991] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+7-LTS
+# VM invoker: /home/heckej/.sdkman/candidates/java/17.0.3.fx-librca/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: test.MyBenchmark.closure2FreeVariables3MillionCalls
+
+# Run progress: 40,00% complete, ETA 00:25:05
+# Fork: 1 of 5
+# Warmup Iteration   1: 993690375,264 ops/s
+# Warmup Iteration   2: 995313556,009 ops/s
+# Warmup Iteration   3: 996301750,273 ops/s
+# Warmup Iteration   4: 996305088,434 ops/s
+# Warmup Iteration   5: 996318936,502 ops/s
+Iteration   1: 996320191,887 ops/s
+Iteration   2: 996269667,364 ops/s
+Iteration   3: 996271591,359 ops/s
+Iteration   4: 996334534,749 ops/s
+Iteration   5: 996283543,235 ops/s
+
+# Run progress: 44,00% complete, ETA 00:23:24
+# Fork: 2 of 5
+# Warmup Iteration   1: 993404865,968 ops/s
+# Warmup Iteration   2: 994143987,421 ops/s
+# Warmup Iteration   3: 996263679,692 ops/s
+# Warmup Iteration   4: 996306581,153 ops/s
+# Warmup Iteration   5: 996323966,633 ops/s
+Iteration   1: 996323584,857 ops/s
+Iteration   2: 996312941,558 ops/s
+Iteration   3: 996255316,628 ops/s
+Iteration   4: 996319843,395 ops/s
+Iteration   5: 996302376,667 ops/s
+
+# Run progress: 48,00% complete, ETA 00:21:44
+# Fork: 3 of 5
+# Warmup Iteration   1: 993714484,275 ops/s
+# Warmup Iteration   2: 994082904,645 ops/s
+# Warmup Iteration   3: 987782397,195 ops/s
+# Warmup Iteration   4: 996301526,000 ops/s
+# Warmup Iteration   5: 996318658,978 ops/s
+Iteration   1: 996320512,539 ops/s
+Iteration   2: 996299487,918 ops/s
+Iteration   3: 996295029,554 ops/s
+Iteration   4: 996313985,706 ops/s
+Iteration   5: 996180764,569 ops/s
+
+# Run progress: 52,00% complete, ETA 00:20:04
+# Fork: 4 of 5
+# Warmup Iteration   1: 993536710,818 ops/s
+# Warmup Iteration   2: 989058505,868 ops/s
+# Warmup Iteration   3: 986591866,373 ops/s
+# Warmup Iteration   4: 990200651,498 ops/s
+# Warmup Iteration   5: 995994730,764 ops/s
+Iteration   1: 996185538,134 ops/s
+Iteration   2: 996230145,151 ops/s
+Iteration   3: 996332382,653 ops/s
+Iteration   4: 996350804,583 ops/s
+Iteration   5: 996078568,030 ops/s
+
+# Run progress: 56,00% complete, ETA 00:18:23
+# Fork: 5 of 5
+# Warmup Iteration   1: 986422155,937 ops/s
+# Warmup Iteration   2: 992124944,088 ops/s
+# Warmup Iteration   3: 996337950,893 ops/s
+# Warmup Iteration   4: 996314771,206 ops/s
+# Warmup Iteration   5: 996339036,350 ops/s
+Iteration   1: 996281937,202 ops/s
+Iteration   2: 996314517,622 ops/s
+Iteration   3: 996288389,045 ops/s
+Iteration   4: 996302979,484 ops/s
+Iteration   5: 996187371,413 ops/s
+
+
+Result "test.MyBenchmark.closure2FreeVariables3MillionCalls":
+  996278240,212 ±(99.9%) 46817,047 ops/s [Average]
+  (min, avg, max) = (996078568,030, 996278240,212, 996350804,583), stdev = 62499,418
+  CI (99.9%): [996231423,166, 996325057,259] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+7-LTS
+# VM invoker: /home/heckej/.sdkman/candidates/java/17.0.3.fx-librca/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: test.MyBenchmark.closure6FreeVariables3MillionCalls
+
+# Run progress: 60,00% complete, ETA 00:16:43
+# Fork: 1 of 5
+# Warmup Iteration   1: 993509502,652 ops/s
+# Warmup Iteration   2: 994110500,528 ops/s
+# Warmup Iteration   3: 996345252,463 ops/s
+# Warmup Iteration   4: 996322867,804 ops/s
+# Warmup Iteration   5: 996335387,803 ops/s
+Iteration   1: 996352442,685 ops/s
+Iteration   2: 996256480,092 ops/s
+Iteration   3: 996193311,847 ops/s
+Iteration   4: 996356961,319 ops/s
+Iteration   5: 996356363,567 ops/s
+
+# Run progress: 64,00% complete, ETA 00:15:03
+# Fork: 2 of 5
+# Warmup Iteration   1: 993608800,280 ops/s
+# Warmup Iteration   2: 995458365,908 ops/s
+# Warmup Iteration   3: 996309741,475 ops/s
+# Warmup Iteration   4: 990110660,735 ops/s
+# Warmup Iteration   5: 996352480,191 ops/s
+Iteration   1: 996355864,968 ops/s
+Iteration   2: 996330208,400 ops/s
+Iteration   3: 996358606,678 ops/s
+Iteration   4: 996356491,575 ops/s
+Iteration   5: 996238956,505 ops/s
+
+# Run progress: 68,00% complete, ETA 00:13:22
+# Fork: 3 of 5
+# Warmup Iteration   1: 993365074,345 ops/s
+# Warmup Iteration   2: 994964170,644 ops/s
+# Warmup Iteration   3: 996325626,660 ops/s
+# Warmup Iteration   4: 996329082,032 ops/s
+# Warmup Iteration   5: 996346368,612 ops/s
+Iteration   1: 996292834,040 ops/s
+Iteration   2: 996266970,499 ops/s
+Iteration   3: 996353029,579 ops/s
+Iteration   4: 996249170,545 ops/s
+Iteration   5: 996339235,470 ops/s
+
+# Run progress: 72,00% complete, ETA 00:11:42
+# Fork: 4 of 5
+# Warmup Iteration   1: 993267089,240 ops/s
+# Warmup Iteration   2: 985185403,202 ops/s
+# Warmup Iteration   3: 995530921,123 ops/s
+# Warmup Iteration   4: 996330986,851 ops/s
+# Warmup Iteration   5: 996353017,720 ops/s
+Iteration   1: 996350619,187 ops/s
+Iteration   2: 996307082,239 ops/s
+Iteration   3: 996338736,796 ops/s
+Iteration   4: 996095128,934 ops/s
+Iteration   5: 996319092,804 ops/s
+
+# Run progress: 76,00% complete, ETA 00:10:02
+# Fork: 5 of 5
+# Warmup Iteration   1: 993675316,816 ops/s
+# Warmup Iteration   2: 995191962,020 ops/s
+# Warmup Iteration   3: 996348776,697 ops/s
+# Warmup Iteration   4: 996317308,075 ops/s
+# Warmup Iteration   5: 996340572,698 ops/s
+Iteration   1: 996293022,908 ops/s
+Iteration   2: 996340916,843 ops/s
+Iteration   3: 995966721,401 ops/s
+Iteration   4: 996320863,407 ops/s
+Iteration   5: 996309805,364 ops/s
+
+
+Result "test.MyBenchmark.closure6FreeVariables3MillionCalls":
+  996291956,706 ±(99.9%) 68904,571 ops/s [Average]
+  (min, avg, max) = (995966721,401, 996291956,706, 996358606,678), stdev = 91985,630
+  CI (99.9%): [996223052,136, 996360861,277] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+7-LTS
+# VM invoker: /home/heckej/.sdkman/candidates/java/17.0.3.fx-librca/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: test.MyBenchmark.closure9FreeVariables3MillionCalls
+
+# Run progress: 80,00% complete, ETA 00:08:21
+# Fork: 1 of 5
+# Warmup Iteration   1: 988369641,737 ops/s
+# Warmup Iteration   2: 994087369,045 ops/s
+# Warmup Iteration   3: 996285804,397 ops/s
+# Warmup Iteration   4: 996248890,566 ops/s
+# Warmup Iteration   5: 996309691,794 ops/s
+Iteration   1: 996299893,901 ops/s
+Iteration   2: 996324021,922 ops/s
+Iteration   3: 996293161,631 ops/s
+Iteration   4: 996317020,067 ops/s
+Iteration   5: 996303712,318 ops/s
+
+# Run progress: 84,00% complete, ETA 00:06:41
+# Fork: 2 of 5
+# Warmup Iteration   1: 993389385,982 ops/s
+# Warmup Iteration   2: 994692078,886 ops/s
+# Warmup Iteration   3: 996324322,588 ops/s
+# Warmup Iteration   4: 996295389,042 ops/s
+# Warmup Iteration   5: 996327906,128 ops/s
+Iteration   1: 996273871,176 ops/s
+Iteration   2: 996287633,093 ops/s
+Iteration   3: 996309257,763 ops/s
+Iteration   4: 988728360,091 ops/s
+Iteration   5: 996193471,051 ops/s
+
+# Run progress: 88,00% complete, ETA 00:05:01
+# Fork: 3 of 5
+# Warmup Iteration   1: 993614312,743 ops/s
+# Warmup Iteration   2: 995027641,597 ops/s
+# Warmup Iteration   3: 996314718,127 ops/s
+# Warmup Iteration   4: 996277729,918 ops/s
+# Warmup Iteration   5: 996317094,451 ops/s
+Iteration   1: 996185848,332 ops/s
+Iteration   2: 996395034,906 ops/s
+Iteration   3: 995019271,329 ops/s
+Iteration   4: 996214585,165 ops/s
+Iteration   5: 996302294,510 ops/s
+
+# Run progress: 92,00% complete, ETA 00:03:20
+# Fork: 4 of 5
+# Warmup Iteration   1: 993172386,133 ops/s
+# Warmup Iteration   2: 994869776,622 ops/s
+# Warmup Iteration   3: 996320193,945 ops/s
+# Warmup Iteration   4: 996294131,789 ops/s
+# Warmup Iteration   5: 996320639,546 ops/s
+Iteration   1: 996322063,518 ops/s
+Iteration   2: 996319959,951 ops/s
+Iteration   3: 988657438,539 ops/s
+Iteration   4: 996313720,666 ops/s
+Iteration   5: 996313840,096 ops/s
+
+# Run progress: 96,00% complete, ETA 00:01:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 993512853,105 ops/s
+# Warmup Iteration   2: 994484450,354 ops/s
+# Warmup Iteration   3: 996345537,346 ops/s
+# Warmup Iteration   4: 996344212,370 ops/s
+# Warmup Iteration   5: 996325879,211 ops/s
+Iteration   1: 996334334,423 ops/s
+Iteration   2: 996246484,091 ops/s
+Iteration   3: 996209005,725 ops/s
+Iteration   4: 996182790,494 ops/s
+Iteration   5: 996235348,646 ops/s
+
+
+Result "test.MyBenchmark.closure9FreeVariables3MillionCalls":
+  995623296,936 ±(99.9%) 1574290,386 ops/s [Average]
+  (min, avg, max) = (988657438,539, 995623296,936, 996395034,906), stdev = 2101632,624
+  CI (99.9%): [994049006,550, 997197587,322] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:41:48
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                         Mode  Cnt          Score         Error  Units
+MyBenchmark.closure13FreeVariables3MillionCalls  thrpt   25  996014537,134 ±  866932,704  ops/s
+MyBenchmark.closure16FreeVariables3MillionCalls  thrpt   25  996302276,171 ±   25013,819  ops/s
+MyBenchmark.closure2FreeVariables3MillionCalls   thrpt   25  996278240,212 ±   46817,047  ops/s
+MyBenchmark.closure6FreeVariables3MillionCalls   thrpt   25  996291956,706 ±   68904,571  ops/s
+MyBenchmark.closure9FreeVariables3MillionCalls   thrpt   25  995623296,936 ± 1574290,386  ops/s
+
+Benchmark result is saved to test-closure_call-0-2.6.9.13.16.csv
