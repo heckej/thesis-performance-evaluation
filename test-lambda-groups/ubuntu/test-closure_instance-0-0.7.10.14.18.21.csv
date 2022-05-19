@@ -1,0 +1,7 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit"
+"test.MyBenchmark.closure0FreeVariables3MillionInstantiations","thrpt",1,25,"7,897786","0,033224","ops/s"
+"test.MyBenchmark.closure10FreeVariables3MillionInstantiations","thrpt",1,25,"7,820993","0,074627","ops/s"
+"test.MyBenchmark.closure14FreeVariables3MillionInstantiations","thrpt",1,25,"7,927628","0,004434","ops/s"
+"test.MyBenchmark.closure18FreeVariables3MillionInstantiations","thrpt",1,25,"7,892647","0,025528","ops/s"
+"test.MyBenchmark.closure21FreeVariables3MillionInstantiations","thrpt",1,25,"7,818148","0,099821","ops/s"
+"test.MyBenchmark.closure7FreeVariables3MillionInstantiations","thrpt",1,25,"8,183280","0,048084","ops/s"
