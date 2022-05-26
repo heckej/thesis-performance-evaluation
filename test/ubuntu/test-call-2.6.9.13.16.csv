@@ -1,6 +1,0 @@
-"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit"
-"test.MyBenchmark.emptyClosure13Arguments3MillionCalls","thrpt",1,25,"996225630,138149","172433,955392","ops/s"
-"test.MyBenchmark.emptyClosure16Arguments3MillionCalls","thrpt",1,25,"10,106029","0,009649","ops/s"
-"test.MyBenchmark.emptyClosure2Arguments3MillionCalls","thrpt",1,25,"994625783,307729","6037550,118152","ops/s"
-"test.MyBenchmark.emptyClosure6Arguments3MillionCalls","thrpt",1,25,"996283283,355082","37498,383260","ops/s"
-"test.MyBenchmark.emptyClosure9Arguments3MillionCalls","thrpt",1,25,"996280075,978034","56310,391540","ops/s"
