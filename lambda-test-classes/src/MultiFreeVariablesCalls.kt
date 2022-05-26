@@ -1,495 +1,196 @@
 package test.microbenchmarking
+import org.openjdk.jmh.infra.Blackhole
 
 class MultiFreeVariablesCalls {
-  fun closure0FreeVariables3MillionCalls(): Int {
-    var j = 0
+  fun closure0FreeVariables3MillionCalls(blackhole: Blackhole): Int {
     val lambda0 = { println("Hello lambda0!"); 5 }
     for (i in 1..3000000) {
-      j += lambda0()
+      blackhole.consume(lambda0())
     }
-    return j
+    return 0
   }
 
-  fun closure1FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
+  fun closure1FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int): Int {
     val lambda1 = { a0 }
     for (i in 1..3000000) {
-      j += lambda1()
+      blackhole.consume(lambda1())
     }
-    return j
+    return 0
   }
 
-  fun closure2FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
+  fun closure2FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int): Int {
     val lambda2 = { a0 + a1 }
     for (i in 1..3000000) {
-      j += lambda2()
+      blackhole.consume(lambda2())
     }
-    return j
+    return 0
   }
 
-  fun closure3FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
+  fun closure3FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int): Int {
     val lambda3 = { a0 + a1 + a2 }
     for (i in 1..3000000) {
-      j += lambda3()
+      blackhole.consume(lambda3())
     }
-    return j
+    return 0
   }
 
-  fun closure4FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
+  fun closure4FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int): Int {
     val lambda4 = { a0 + a1 + a2 + a3 }
     for (i in 1..3000000) {
-      j += lambda4()
+      blackhole.consume(lambda4())
     }
-    return j
+    return 0
   }
 
-  fun closure5FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
+  fun closure5FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int): Int {
     val lambda5 = { a0 + a1 + a2 + a3 + a4 }
     for (i in 1..3000000) {
-      j += lambda5()
+      blackhole.consume(lambda5())
     }
-    return j
+    return 0
   }
 
-  fun closure6FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
+  fun closure6FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int): Int {
     val lambda6 = { a0 + a1 + a2 + a3 + a4 + a5 }
     for (i in 1..3000000) {
-      j += lambda6()
+      blackhole.consume(lambda6())
     }
-    return j
+    return 0
   }
 
-  fun closure7FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
+  fun closure7FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int): Int {
     val lambda7 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 }
     for (i in 1..3000000) {
-      j += lambda7()
+      blackhole.consume(lambda7())
     }
-    return j
+    return 0
   }
 
-  fun closure8FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
+  fun closure8FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int): Int {
     val lambda8 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 }
     for (i in 1..3000000) {
-      j += lambda8()
+      blackhole.consume(lambda8())
     }
-    return j
+    return 0
   }
 
-  fun closure9FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
+  fun closure9FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int): Int {
     val lambda9 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 }
     for (i in 1..3000000) {
-      j += lambda9()
+      blackhole.consume(lambda9())
     }
-    return j
+    return 0
   }
 
-  fun closure10FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
+  fun closure10FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int): Int {
     val lambda10 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 }
     for (i in 1..3000000) {
-      j += lambda10()
+      blackhole.consume(lambda10())
     }
-    return j
+    return 0
   }
 
-  fun closure11FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
+  fun closure11FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int): Int {
     val lambda11 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 }
     for (i in 1..3000000) {
-      j += lambda11()
+      blackhole.consume(lambda11())
     }
-    return j
+    return 0
   }
 
-  fun closure12FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
+  fun closure12FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int): Int {
     val lambda12 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 }
     for (i in 1..3000000) {
-      j += lambda12()
+      blackhole.consume(lambda12())
     }
-    return j
+    return 0
   }
 
-  fun closure13FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
+  fun closure13FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int): Int {
     val lambda13 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 }
     for (i in 1..3000000) {
-      j += lambda13()
+      blackhole.consume(lambda13())
     }
-    return j
+    return 0
   }
 
-  fun closure14FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
+  fun closure14FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int): Int {
     val lambda14 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 }
     for (i in 1..3000000) {
-      j += lambda14()
+      blackhole.consume(lambda14())
     }
-    return j
+    return 0
   }
 
-  fun closure15FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
+  fun closure15FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int): Int {
     val lambda15 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 }
     for (i in 1..3000000) {
-      j += lambda15()
+      blackhole.consume(lambda15())
     }
-    return j
+    return 0
   }
 
-  fun closure16FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
+  fun closure16FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int): Int {
     val lambda16 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 }
     for (i in 1..3000000) {
-      j += lambda16()
+      blackhole.consume(lambda16())
     }
-    return j
+    return 0
   }
 
-  fun closure17FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
+  fun closure17FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int): Int {
     val lambda17 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 }
     for (i in 1..3000000) {
-      j += lambda17()
+      blackhole.consume(lambda17())
     }
-    return j
+    return 0
   }
 
-  fun closure18FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
+  fun closure18FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int): Int {
     val lambda18 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 }
     for (i in 1..3000000) {
-      j += lambda18()
+      blackhole.consume(lambda18())
     }
-    return j
+    return 0
   }
 
-  fun closure19FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
-    val a18 = 18
+  fun closure19FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int, a18: Int): Int {
     val lambda19 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 }
     for (i in 1..3000000) {
-      j += lambda19()
+      blackhole.consume(lambda19())
     }
-    return j
+    return 0
   }
 
-  fun closure20FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
-    val a18 = 18
-    val a19 = 19
+  fun closure20FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int, a18: Int, a19: Int): Int {
     val lambda20 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a19 }
     for (i in 1..3000000) {
-      j += lambda20()
+      blackhole.consume(lambda20())
     }
-    return j
+    return 0
   }
 
-  fun closure21FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
-    val a18 = 18
-    val a19 = 19
-    val a20 = 20
+  fun closure21FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int, a18: Int, a19: Int, a20: Int): Int {
     val lambda21 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a19 + a20 }
     for (i in 1..3000000) {
-      j += lambda21()
+      blackhole.consume(lambda21())
     }
-    return j
+    return 0
   }
 
-  fun closure22FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
-    val a18 = 18
-    val a19 = 19
-    val a20 = 20
-    val a21 = 21
+  fun closure22FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int, a18: Int, a19: Int, a20: Int, a21: Int): Int {
     val lambda22 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a19 + a20 + a21 }
     for (i in 1..3000000) {
-      j += lambda22()
+      blackhole.consume(lambda22())
     }
-    return j
+    return 0
   }
 
-  fun closure23FreeVariables3MillionCalls(): Int {
-    var j = 0
-    val a0 = 0
-    val a1 = 1
-    val a2 = 2
-    val a3 = 3
-    val a4 = 4
-    val a5 = 5
-    val a6 = 6
-    val a7 = 7
-    val a8 = 8
-    val a9 = 9
-    val a10 = 10
-    val a11 = 11
-    val a12 = 12
-    val a13 = 13
-    val a14 = 14
-    val a15 = 15
-    val a16 = 16
-    val a17 = 17
-    val a18 = 18
-    val a19 = 19
-    val a20 = 20
-    val a21 = 21
-    val a22 = 22
+  fun closure23FreeVariables3MillionCalls(blackhole: Blackhole, a0: Int, a1: Int, a2: Int, a3: Int, a4: Int, a5: Int, a6: Int, a7: Int, a8: Int, a9: Int, a10: Int, a11: Int, a12: Int, a13: Int, a14: Int, a15: Int, a16: Int, a17: Int, a18: Int, a19: Int, a20: Int, a21: Int, a22: Int): Int {
     val lambda23 = { a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a19 + a20 + a21 + a22 }
     for (i in 1..3000000) {
-      j += lambda23()
+      blackhole.consume(lambda23())
     }
-    return j
+    return 0
   }
 }

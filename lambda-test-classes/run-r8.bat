@@ -1,2 +1,3 @@
-r8 --pg-conf r8-config.pro --min-api 31 --output build/r8/test-classes-r8-2.1.0 --lib "C:/Users/joren/AppData/Local/Android/Sdk/platforms/android-31/android.jar" --lib "D:\Master-CS-projects\merge-lambdas\annotations-13.0.jar" --lib "D:\Master-CS-projects\merge-lambdas\kotlin-stdlib.jar" --lib "C:\Users\joren\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar" build/libs/test-classes-2.1.0.jar
-d2j-dex2jar build/r8/test-classes-r8-2.1.0/classes.dex --output build/r8/test-classes-r8-2.1.0.jar
+mkdir "build\r8\test-classes-r8-2.2.0"
+r8 --pg-conf r8-config.pro --min-api 31 --output build/r8/test-classes-r8-2.2.0 --lib "C:/Users/joren/AppData/Local/Android/Sdk/platforms/android-31/android.jar" --lib "D:\Master-CS-projects\merge-lambdas\annotations-13.0.jar" --lib "D:\Master-CS-projects\merge-lambdas\kotlin-stdlib.jar" --lib "C:\Users\joren\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar" build/libs/test-classes-2.2.0.jar
+d2j-dex2jar "build\r8\test-classes-r8-2.2.0\classes.dex" --output "build\r8\test-classes-r8-2.2.0.jar"
