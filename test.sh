@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 cd test
 cd ubuntu
-java -jar ../target/benchmarks.jar -f5 -i5 -rff test-instance-1.4.8.11.15.19.23.csv closure1FreeVariables3MillionInstantiations closure4FreeVariables3MillionInstantiations closure8FreeVariables3MillionInstantiations closure11FreeVariables3MillionInstantiations closure15FreeVariables3MillionInstantiations closure19FreeVariables3MillionInstantiations closure23FreeVariables3MillionInstantiations > test-instance-1.4.8.11.15.19.23.log
+java -jar ../target/benchmarks.jar -f5 -i5 -rff test-closure-call-1.2.4.8.9.11.15.16.19.23.csv -e "Instantiations|Arguments" e2F e1F 11 13 15 16 19 23 e1A e2A e4A e6A e8A e9A e4F e6F e8F e9F  > test-closure-call-1.2.4.8.9.11.15.16.19.23.log

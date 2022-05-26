@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 cd test-lambda-groups
 cd ubuntu
-java -jar ../target/benchmarks.jar -f5 -i5 -rff test-instance-1.4.8.11.15.19.23.csv -prof jfr  closure1FreeVariables3MillionInstantiations closure4FreeVariables3MillionInstantiations closure8FreeVariables3MillionInstantiations closure11FreeVariables3MillionInstantiations closure15FreeVariables3MillionInstantiations closure19FreeVariables3MillionInstantiations closure23FreeVariables3MillionInstantiations > test-instance-1.4.8.11.15.19.23.log
+java -jar ../target/benchmarks.jar -f5 -i5 -rff test-closure_instance-0-0.7.10.14.18.21.csv -e FreeVariables3MillionInstantiationsAndCalls closure7FreeVariables3MillionInstantiations closure14FreeVariables3MillionInstantiations closure18FreeVariables3MillionInstantiations closure0FreeVariables3MillionInstantiations closure10FreeVariables3MillionInstantiations closure21FreeVariables3MillionInstantiations > test-closure_instance-0-0.7.10.14.18.21.log
