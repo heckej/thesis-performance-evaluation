@@ -5,147 +5,147 @@ import org.openjdk.jmh.infra.Blackhole
 
 open class MyBenchmark {
     @Benchmark
-    fun closure0FreeVariables3MillionCalls(): Int {
+    fun closure0FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure0FreeVariables3MillionCalls()
+        return main.closure0FreeVariables3MillionCalls(blackhole, )
     }
 
     @Benchmark
-    fun closure1FreeVariables3MillionCalls(): Int {
+    fun closure1FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure1FreeVariables3MillionCalls()
+        return main.closure1FreeVariables3MillionCalls(blackhole, 0)
     }
 
     @Benchmark
-    fun closure2FreeVariables3MillionCalls(): Int {
+    fun closure2FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure2FreeVariables3MillionCalls()
+        return main.closure2FreeVariables3MillionCalls(blackhole, 0, 1)
     }
 
     @Benchmark
-    fun closure3FreeVariables3MillionCalls(): Int {
+    fun closure3FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure3FreeVariables3MillionCalls()
+        return main.closure3FreeVariables3MillionCalls(blackhole, 0, 1, 2)
     }
 
     @Benchmark
-    fun closure4FreeVariables3MillionCalls(): Int {
+    fun closure4FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure4FreeVariables3MillionCalls()
+        return main.closure4FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3)
     }
 
     @Benchmark
-    fun closure5FreeVariables3MillionCalls(): Int {
+    fun closure5FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure5FreeVariables3MillionCalls()
+        return main.closure5FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4)
     }
 
     @Benchmark
-    fun closure6FreeVariables3MillionCalls(): Int {
+    fun closure6FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure6FreeVariables3MillionCalls()
+        return main.closure6FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5)
     }
 
     @Benchmark
-    fun closure7FreeVariables3MillionCalls(): Int {
+    fun closure7FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure7FreeVariables3MillionCalls()
+        return main.closure7FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6)
     }
 
     @Benchmark
-    fun closure8FreeVariables3MillionCalls(): Int {
+    fun closure8FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure8FreeVariables3MillionCalls()
+        return main.closure8FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7)
     }
 
     @Benchmark
-    fun closure9FreeVariables3MillionCalls(): Int {
+    fun closure9FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure9FreeVariables3MillionCalls()
+        return main.closure9FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8)
     }
 
     @Benchmark
-    fun closure10FreeVariables3MillionCalls(): Int {
+    fun closure10FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure10FreeVariables3MillionCalls()
+        return main.closure10FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
     }
 
     @Benchmark
-    fun closure11FreeVariables3MillionCalls(): Int {
+    fun closure11FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure11FreeVariables3MillionCalls()
+        return main.closure11FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     }
 
     @Benchmark
-    fun closure12FreeVariables3MillionCalls(): Int {
+    fun closure12FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure12FreeVariables3MillionCalls()
+        return main.closure12FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
     }
 
     @Benchmark
-    fun closure13FreeVariables3MillionCalls(): Int {
+    fun closure13FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure13FreeVariables3MillionCalls()
+        return main.closure13FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
     }
 
     @Benchmark
-    fun closure14FreeVariables3MillionCalls(): Int {
+    fun closure14FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure14FreeVariables3MillionCalls()
+        return main.closure14FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
     }
 
     @Benchmark
-    fun closure15FreeVariables3MillionCalls(): Int {
+    fun closure15FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure15FreeVariables3MillionCalls()
+        return main.closure15FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
     }
 
     @Benchmark
-    fun closure16FreeVariables3MillionCalls(): Int {
+    fun closure16FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure16FreeVariables3MillionCalls()
+        return main.closure16FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
     }
 
     @Benchmark
-    fun closure17FreeVariables3MillionCalls(): Int {
+    fun closure17FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure17FreeVariables3MillionCalls()
+        return main.closure17FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
     }
 
     @Benchmark
-    fun closure18FreeVariables3MillionCalls(): Int {
+    fun closure18FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure18FreeVariables3MillionCalls()
+        return main.closure18FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
     }
 
     @Benchmark
-    fun closure19FreeVariables3MillionCalls(): Int {
+    fun closure19FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure19FreeVariables3MillionCalls()
+        return main.closure19FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
     }
 
     @Benchmark
-    fun closure20FreeVariables3MillionCalls(): Int {
+    fun closure20FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure20FreeVariables3MillionCalls()
+        return main.closure20FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
     }
 
     @Benchmark
-    fun closure21FreeVariables3MillionCalls(): Int {
+    fun closure21FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure21FreeVariables3MillionCalls()
+        return main.closure21FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
     }
 
     @Benchmark
-    fun closure22FreeVariables3MillionCalls(): Int {
+    fun closure22FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure22FreeVariables3MillionCalls()
+        return main.closure22FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21)
     }
 
     @Benchmark
-    fun closure23FreeVariables3MillionCalls(): Int {
+    fun closure23FreeVariables3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiFreeVariablesCalls()
-        return main.closure23FreeVariables3MillionCalls()
+        return main.closure23FreeVariables3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)
     }
 
     @Benchmark
@@ -437,147 +437,147 @@ open class MyBenchmark {
     }
 
     @Benchmark
-    fun emptyClosure0Arguments3MillionCalls(): Int {
+    fun emptyClosure0Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure0Arguments3MillionCalls()
+        return main.emptyClosure0Arguments3MillionCalls(blackhole, )
     }
 
     @Benchmark
-    fun emptyClosure1Arguments3MillionCalls(): Int {
+    fun emptyClosure1Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure1Arguments3MillionCalls()
+        return main.emptyClosure1Arguments3MillionCalls(blackhole, 0)
     }
 
     @Benchmark
-    fun emptyClosure2Arguments3MillionCalls(): Int {
+    fun emptyClosure2Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure2Arguments3MillionCalls()
+        return main.emptyClosure2Arguments3MillionCalls(blackhole, 0, 1)
     }
 
     @Benchmark
-    fun emptyClosure3Arguments3MillionCalls(): Int {
+    fun emptyClosure3Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure3Arguments3MillionCalls()
+        return main.emptyClosure3Arguments3MillionCalls(blackhole, 0, 1, 2)
     }
 
     @Benchmark
-    fun emptyClosure4Arguments3MillionCalls(): Int {
+    fun emptyClosure4Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure4Arguments3MillionCalls()
+        return main.emptyClosure4Arguments3MillionCalls(blackhole, 0, 1, 2, 3)
     }
 
     @Benchmark
-    fun emptyClosure5Arguments3MillionCalls(): Int {
+    fun emptyClosure5Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure5Arguments3MillionCalls()
+        return main.emptyClosure5Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4)
     }
 
     @Benchmark
-    fun emptyClosure6Arguments3MillionCalls(): Int {
+    fun emptyClosure6Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure6Arguments3MillionCalls()
+        return main.emptyClosure6Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5)
     }
 
     @Benchmark
-    fun emptyClosure7Arguments3MillionCalls(): Int {
+    fun emptyClosure7Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure7Arguments3MillionCalls()
+        return main.emptyClosure7Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6)
     }
 
     @Benchmark
-    fun emptyClosure8Arguments3MillionCalls(): Int {
+    fun emptyClosure8Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure8Arguments3MillionCalls()
+        return main.emptyClosure8Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7)
     }
 
     @Benchmark
-    fun emptyClosure9Arguments3MillionCalls(): Int {
+    fun emptyClosure9Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure9Arguments3MillionCalls()
+        return main.emptyClosure9Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8)
     }
 
     @Benchmark
-    fun emptyClosure10Arguments3MillionCalls(): Int {
+    fun emptyClosure10Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure10Arguments3MillionCalls()
+        return main.emptyClosure10Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
     }
 
     @Benchmark
-    fun emptyClosure11Arguments3MillionCalls(): Int {
+    fun emptyClosure11Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure11Arguments3MillionCalls()
+        return main.emptyClosure11Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     }
 
     @Benchmark
-    fun emptyClosure12Arguments3MillionCalls(): Int {
+    fun emptyClosure12Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure12Arguments3MillionCalls()
+        return main.emptyClosure12Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
     }
 
     @Benchmark
-    fun emptyClosure13Arguments3MillionCalls(): Int {
+    fun emptyClosure13Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure13Arguments3MillionCalls()
+        return main.emptyClosure13Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
     }
 
     @Benchmark
-    fun emptyClosure14Arguments3MillionCalls(): Int {
+    fun emptyClosure14Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure14Arguments3MillionCalls()
+        return main.emptyClosure14Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
     }
 
     @Benchmark
-    fun emptyClosure15Arguments3MillionCalls(): Int {
+    fun emptyClosure15Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure15Arguments3MillionCalls()
+        return main.emptyClosure15Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
     }
 
     @Benchmark
-    fun emptyClosure16Arguments3MillionCalls(): Int {
+    fun emptyClosure16Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure16Arguments3MillionCalls()
+        return main.emptyClosure16Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
     }
 
     @Benchmark
-    fun emptyClosure17Arguments3MillionCalls(): Int {
+    fun emptyClosure17Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure17Arguments3MillionCalls()
+        return main.emptyClosure17Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
     }
 
     @Benchmark
-    fun emptyClosure18Arguments3MillionCalls(): Int {
+    fun emptyClosure18Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure18Arguments3MillionCalls()
+        return main.emptyClosure18Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
     }
 
     @Benchmark
-    fun emptyClosure19Arguments3MillionCalls(): Int {
+    fun emptyClosure19Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure19Arguments3MillionCalls()
+        return main.emptyClosure19Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
     }
 
     @Benchmark
-    fun emptyClosure20Arguments3MillionCalls(): Int {
+    fun emptyClosure20Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure20Arguments3MillionCalls()
+        return main.emptyClosure20Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
     }
 
     @Benchmark
-    fun emptyClosure21Arguments3MillionCalls(): Int {
+    fun emptyClosure21Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure21Arguments3MillionCalls()
+        return main.emptyClosure21Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
     }
 
     @Benchmark
-    fun emptyClosure22Arguments3MillionCalls(): Int {
+    fun emptyClosure22Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure22Arguments3MillionCalls()
+        return main.emptyClosure22Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21)
     }
 
     @Benchmark
-    fun emptyClosure23Arguments3MillionCalls(): Int {
+    fun emptyClosure23Arguments3MillionCalls(blackhole: Blackhole): Int {
         val main = MultiArgumentCalls()
-        return main.emptyClosure23Arguments3MillionCalls()
+        return main.emptyClosure23Arguments3MillionCalls(blackhole, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)
     }
 
     @Benchmark
