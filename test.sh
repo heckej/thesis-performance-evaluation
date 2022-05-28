@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 cd test
 cd ubuntu
-java -jar ../target/benchmarks.jar -f5 -i5 -rff test-arity-call-closure-call-6.13.21.csv -e "InstantiationsAnd" e6A e6F e13A e13F e21A e21F > test-arity-call-closure-call-6.13.21.log
+java -jar ../target/benchmarks.jar -f5 -i5 -rff test-arity-call-all.csv -e "Instantiations|Free" > test-arity-call-all.log
