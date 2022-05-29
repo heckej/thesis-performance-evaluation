@@ -12,7 +12,7 @@ cd /mnt/back-up/Laptop-Joren/d/Master-CS-projects/masterproef/performance-evalua
 #git add .
 #git commit -m "Benchmark results ProGuard with shrinking, optimisation and lambda merging: closure call non-zero closure sizes"
 #git push
-./test-r8.sh
+/mnt/back-up/Laptop-Joren/d/Master-CS-projects/masterproef/performance-evaluation/test-r8.sh
 git add .
 git commit -m "Benchmark results R8 with shrinking and optimisation: closure call non-zero closure sizes"
 git push
